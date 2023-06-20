@@ -1,0 +1,175 @@
+//Header section 	 ↓
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(29 35 85 / 90%);
+  z-index: 200;
+
+    &.shadow {
+      background: $container-color;
+    }  
+}
+
+
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  .nav__logo {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  
+    &:hover {
+  
+      .nav__img{
+       transform: rotate(344deg) translateY(-10px);
+      }
+  
+    }
+    .nav__img {
+      width: 2.5rem;
+  
+    }
+  
+    span {
+      color: $main-color;
+    }  
+  }
+}
+
+//Navigation menu 	↓
+.navbar {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+
+    .navbar__link {
+      position: relative;
+      font-size: 1rem;
+      color: $text-color;
+      font-weight: 500;
+
+        &:hover {
+          opacity: .8;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0%;
+          height: 3px;
+          background: $main-color;
+        }
+
+        &:hover::after {
+          width: 100%;
+          transition: all .4s linear;
+        }
+    }
+}
+
+.navbar__login-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2px;
+  background: $main-color;
+  color: $text-color;
+  font-weight: 500;
+  padding: 8px 15px;
+  cursor: pointer;
+
+
+  &:hover {
+    background: $hover-color;
+
+    .bx {
+      transform: translateY(5px);
+    }
+  }
+
+    .bx {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+}
+//Drop Menu 	↓
+.drop__login {
+  position: absolute;
+  top: 115%;
+  right: 0;
+  width: 231px;
+  height: auto;
+  background: $container-color;
+  box-shadow: 4px 4px 10px 2px rgb(23 27 38 / 60%);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    &.drop__login-open {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .drop__item {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 15px;
+
+        &:hover {
+          background: $main-color;
+        }
+
+        a {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $text-color;
+        }
+
+        span {
+          font-size: 0.9rem;
+          font-weight: 400;
+          color: $text-color;
+        }
+    }
+}
+//Burger menu 	↓
+.nav__menu-icon {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  cursor: pointer;
+  z-index: 200;
+
+    div {
+      display: block;
+      background: $text-color;
+      height: 2px;
+      width: 25px;
+    }
+
+  &.move .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  &.move .line2 {
+    opacity: 0;
+  }
+
+  &.move .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+}

@@ -1,0 +1,200 @@
+@media screen and (max-width: 1050px) {
+  .container {
+    margin: 0 auto;
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 952px) {
+  .nav {
+    padding: 14px 0;
+  }
+
+  section {
+    padding: 3rem 0 2rem;
+  }
+
+  .home__slide {
+    min-height: 560px;
+  }
+
+  .games__content {
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  }
+
+  .game__box-img {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .prices__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .prices__title {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav__menu-icon {
+    display: flex;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: $container-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+  }
+
+  .navbar.open-menu {
+    right: 0;
+  }
+
+  .navbar__link {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .navbar__login-btn {
+    margin-top: 1.5rem;
+  }
+
+  .drop__login {
+    left: 0;
+    background: $body-color;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .home__slide {
+    min-height: 500px;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .slide__title {
+    font-size: 1.7rem;
+  }
+
+  .slide__descreption,
+  .services__content-box p, 
+  .control__text p,
+  .faq__text p {
+    font-size: 0.875rem;
+  }
+
+  .heading,
+  .accordion__text h2,
+  .control__title {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prices__text {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .faq__accordion {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+
+  .accordion__text {
+    flex: 1 1 10rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .prices__container {
+    grid-template-columns: 1fr;
+
+      :nth-child(6) {
+        margin-bottom: 10px;
+      }
+  }
+
+  .accordion__title {
+    font-size: 0.92rem;
+  }
+
+  .prices__title {
+    font-size: 2rem;
+  }
+
+  .prices__description {
+    font-size: 0.85rem;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+  .home__slide {
+    min-height: 454px;
+  }
+
+  .games {
+    width: 90%;
+  }
+
+  .game__box-img {
+    height: 190px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .navbar {
+    width: 280px;
+  }
+
+  .services__content,
+  .games__content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__title {
+    font-size: 1.074rem;
+  }
+
+  .prices__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .prices__title {
+    font-size: 1.6rem;
+  }
+
+  .price__box-img {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 316px) {
+  .navbar {
+    width: 100%;
+  }
+}

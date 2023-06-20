@@ -1,0 +1,60 @@
+//Title h2 	↓
+
+.heading {
+  position: relative;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0;
+      width: 44px;
+      height: 3px;
+      background: $main-color;
+    }
+}
+
+//Services content 	↓
+
+.services__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1.5rem;
+}
+.services__content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $container-color;
+  border-radius: 0.3rem;
+  padding: 15px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .bx {
+      font-size: 1.7rem;
+      padding: 10px;
+      background: $main-color;
+      border-radius: 0.3rem;
+    }
+
+    p {
+      font-size: 0.938rem;
+    }
+}
+
+.services__box-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1.3rem 0 0.5rem;
+}
+

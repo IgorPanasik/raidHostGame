@@ -1,0 +1,82 @@
+.prices__container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2rem !important;
+}
+
+.price__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $container-color;
+  border-radius: 0.4rem;
+  margin-bottom: 5rem;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+}
+.price__box-img {
+  display: block;
+  width: 100px;
+  position: relative;
+  margin-top: -64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card__top {
+  margin: 1rem;
+
+    p {
+      font-size: 0.95rem;
+      color: #d4d4d4;
+    }
+}
+.price__item-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.price__heading {
+  width: 100%;
+  padding: 8px 0;
+  background: $main-color;
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    span {
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: lowercase;
+    }
+}
+.ram__title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0.7rem 0 1rem;
+  font-weight: 600;
+
+    span {
+      font-size: 1.0125rem;
+      color: #d4d4d4;
+      font-weight: 500;
+    }
+}
+.plan__btn {
+  padding: 8px 24px;
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: $main-color;
+  margin-bottom: 1.5rem;
+
+    &:hover {
+      background: $hover-color;
+    }
+}

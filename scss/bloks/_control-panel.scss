@@ -1,0 +1,59 @@
+.control {
+  background: $container-color;
+}
+.control__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background: $container-color;
+}
+
+.control__text {
+  flex: 1 1 17rem;
+
+    p {
+      font-size: 0.938rem;
+      margin: 0.5rem 0 0.8rem;
+    }
+
+    .bx {
+      color: $main-color;
+    }
+}
+
+.control__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.control__spec-box {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+    span {
+      font-size: 0.938rem;
+    }
+}
+
+.control__images {
+  flex: 1 1 17rem;
+}
+
+.swiper-button-next {
+  &::after {
+    font-size: 24px !important;
+    font-weight: 600;
+    color: $main-color;
+  }
+}
+.swiper-button-prev {
+  &::after {
+    font-size: 24px !important;
+    font-weight: 600;
+    color: $main-color;
+  }
+}

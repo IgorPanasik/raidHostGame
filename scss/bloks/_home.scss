@@ -1,0 +1,84 @@
+//Swiper slide section 	↓
+.home__slide {
+  min-height: 640px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.home__slide-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.home__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(74deg, rgb(23 , 27, 68, 80%) 50%,
+                                     rgb(23, 27, 68,14%));
+  z-index: 200;                                   
+}
+//Swiper buttons 	↓
+.swiper-pagination-bullet {
+  
+  width: 8px !important;
+  height: 7px !important;
+  border-radius: 0.2rem !important;
+  background: $body-alter-color !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 2rem !important;
+  background: $main-color !important;
+}
+
+//Home title  	↓
+.home__text {
+  z-index: 200;
+}
+
+.slide__title {
+  position: relative;
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+    &::after {
+      @include line;
+    }
+
+    span {
+      color: $main-color;
+    }
+}
+
+.slide__descreption {
+  max-width: 450px;
+  font-size: 0.938rem;
+  margin: 0.2rem 0 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  background: $main-color;
+  padding: 10px 16px;
+  color: $text-color;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+    &:hover {
+      background: $hover-color;
+    }
+}
+

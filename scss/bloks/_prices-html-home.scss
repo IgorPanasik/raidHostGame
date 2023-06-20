@@ -1,0 +1,36 @@
+.prices {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(rgb(23, 27, 68, 87%) 100%,
+                                    rgb(23, 27, 68, 87%) 100%), 
+                                    url(../images/price/prices-home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prices__text {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.prices__subtitle {
+  font-size: 1.2rem;
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.prices__title {
+  font-size: 3.5rem;
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.prices__description {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}

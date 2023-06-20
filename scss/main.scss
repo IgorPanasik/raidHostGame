@@ -1,0 +1,23 @@
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+//Mixin
+@import './base/mixn';
+
+@import './bloks/header';
+@import './bloks/home';
+@import './bloks/_services';
+@import './bloks/game-price';
+@import './bloks/faq';
+@import './bloks/accordion';
+@import './bloks/control-panel';
+@import './bloks/footer';
+
+//prices.html
+@import './bloks/prices-html-home';
+@import './bloks/prices-html-games';
+
+//Responsive
+@import './bloks/responsive';
+

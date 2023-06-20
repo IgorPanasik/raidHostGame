@@ -1,0 +1,10 @@
+@mixin line {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 44px;
+  height: 3px;
+  background: $main-color;
+}
+
